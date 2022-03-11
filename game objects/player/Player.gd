@@ -12,10 +12,13 @@ var speed = RUN_SPEED
 const ACCEL = 3
 const DEACCEL = 5
 
+var platforms = []
 
 func _physics_process(delta):
 	process_input(delta)
 	process_movement(delta)
+	if translation.y < -5:
+		climbing()
 
 
 func process_movement(delta: float):
@@ -48,5 +51,13 @@ func process_input(delta: float):
 	if is_on_floor():
 		if Input.is_action_just_pressed("JUMP"):
 			velocity.y = JUMP_SPEED
-	
+
+func climbing():
+# взбирание на ближайшую из кувшинок нижнего уровня в случае падения в воду
+	var platform = platforms[0]
+	for pl in platforms:
+		if (translation - pl.translation).length_squared() < (translation - platform.translation).length_squared():
+			platform = pl
+
+	translation = platform.translation + Vector3.UP
 

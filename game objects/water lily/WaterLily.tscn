@@ -6,7 +6,7 @@ height = 0.1
 [sub_resource type="CylinderShape" id=2]
 height = 0.2
 
-[node name="WaterLily" type="StaticBody"]
+[node name="WaterLily" type="StaticBody" groups=["PLATFORMS"]]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )
