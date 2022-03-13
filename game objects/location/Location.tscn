@@ -28,7 +28,31 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.17941, -2.12936, -2.95487 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.230853, -0.735166, -5.2213 )
 
 [node name="WaterLily5" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.02477, -0.946258, -3.98193 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.02477, 0.374774, -3.98193 )
 
 [node name="WaterLily6" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.91966, 0.622714, -7.08856 )
+
+[node name="WaterLily9" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.66768, -0.946258, -10.5409 )
+
+[node name="WaterLily10" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.799104, -10.1865 )
+
+[node name="WaterLily11" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00892, -0.946258, -9.55812 )
+
+[node name="WaterLily12" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05772, -0.946258, -13.9433 )
+
+[node name="WaterLily13" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.17941, -2.12936, -14.4575 )
+
+[node name="WaterLily14" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.230853, -0.735166, -17.7606 )
+
+[node name="WaterLily15" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.02477, -0.946258, -16.5213 )
+
+[node name="WaterLily16" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.26455, 0.622714, -15.8223 )

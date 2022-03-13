@@ -24,7 +24,7 @@ func _physics_process(delta):
 func process_movement(delta: float):
 	move_direction.y = 0
 	move_direction = move_direction.normalized()
-	
+
 	velocity.y -= delta * GRAVITY
 	var horiz_velocity = velocity
 	var target_velocity = move_direction * speed
@@ -47,6 +47,8 @@ func process_input(delta: float):
 	move_direction = Vector3.ZERO
 	move_direction += transform.basis.z * input_movement_vector.y
 	move_direction += transform.basis.x * input_movement_vector.x
+	var hor_rotation = $CameraRoot/Hor.rotation.y
+	move_direction = move_direction.rotated(Vector3.UP, hor_rotation)
 	
 	if is_on_floor():
 		if Input.is_action_just_pressed("JUMP"):
@@ -58,6 +60,5 @@ func climbing():
 	for pl in platforms:
 		if (translation - pl.translation).length_squared() < (translation - platform.translation).length_squared():
 			platform = pl
-
 	translation = platform.translation + Vector3.UP
 
